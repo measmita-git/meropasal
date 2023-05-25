@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mero_pasal/screens/login_Screen.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -165,7 +166,12 @@ class SignUpScreen extends StatelessWidget {
                       ),
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: ((context) => LoginScreen())));
+                      },
                       child: Text(
                         'Login',
                         style: TextStyle(

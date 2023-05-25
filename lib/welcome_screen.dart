@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:emoji_picker/emoji_picker.dart';
+import 'package:mero_pasal/screens/signup_screen.dart';
+
+// import 'package:emoji_picker/emoji_picker.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -13,6 +13,7 @@ class WelcomeScreen extends StatelessWidget {
       body: Container(
         margin: EdgeInsets.all(80),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
               'Welcome!',
@@ -22,11 +23,18 @@ class WelcomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            Image.asset(
+              'assets/luck.jpg',
+            ),
             TextButton(
               style: TextButton.styleFrom(
+                elevation: 5,
                 backgroundColor: Color(0xFF6A2FC1),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: ((context) => SignUpScreen())));
+              },
               child: Text(
                 'Get Started',
                 style: TextStyle(
