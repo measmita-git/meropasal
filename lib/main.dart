@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mero_pasal/screens/login_Screen.dart';
+
+import 'package:mero_pasal/welcome_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoginScreen(),
+      home: WelcomeScreen(),
     );
   }
 }
