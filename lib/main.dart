@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mero_pasal/home_appbar.dart';
 import 'package:mero_pasal/screens/cart_page.dart';
 import 'package:mero_pasal/screens/login_Screen.dart';
 import 'package:mero_pasal/screens/product_screen.dart';
@@ -16,14 +17,16 @@ class MyApp extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/',
-      routes: {
-        '/': (context) => WelcomeScreen(),
-        '/second': (context) => SignUpScreen(),
-        '/third': (context) => LoginScreen(),
-        '/fourth': (context) => ProductScreen(),
-        'fifth': (context) => CartPage(),
-      },
+      debugShowCheckedModeBanner: false,
+      home: HomeAppBar(),
+      // initialRoute: '/',
+      // routes: {
+      //   '/': (context) => WelcomeScreen(),
+      //   '/second': (context) => SignUpScreen(),
+      //   '/third': (context) => LoginScreen(),
+      //   '/fourth': (context) => ProductScreen(),
+      //   'fifth': (context) => CartPage(),
+      // },
     );
   }
 }
