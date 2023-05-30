@@ -33,18 +33,20 @@ class ProductScreen extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Container(
-                        margin: EdgeInsets.only(left: 5),
-                        height: 50,
-                        width: 500,
-                        child: TextFormField(
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: 'Search',
-                            hintStyle: TextStyle(
-                              color: Colors.black,
+                      Expanded(
+                        child: Container(
+                          margin: EdgeInsets.only(left: 5),
+                          height: 50,
+                          width: 500,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              hintText: 'Search',
+                              hintStyle: TextStyle(
+                                color: Colors.black,
+                              ),
+                              prefixIcon: Icon(Icons.search),
                             ),
-                            prefixIcon: Icon(Icons.search),
                           ),
                         ),
                       ),

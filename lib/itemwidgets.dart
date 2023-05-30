@@ -48,8 +48,8 @@ class ItemWidgets extends StatelessWidget {
                   },
                   child: Image.asset(
                     'assets/$i.png',
-                    height: 220,
-                    width: 300,
+                    height: 130,
+                    width: 180,
                   ),
                 ),
                 Container(
