@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
+import 'package:mero_pasal/screens/cart_page.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({super.key});
@@ -29,7 +30,11 @@ class HomeAppBar extends StatelessWidget {
               badgeStyle: badges.BadgeStyle(padding: EdgeInsets.all(6.0)),
               badgeContent: Text('3'),
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/CartScreen');
+                  // Navigator.push(context,
+                  //     MaterialPageRoute(builder: ((context) => CartPage())));
+                },
                 child: Icon(
                   Icons.shopping_bag_outlined,
                   size: 30,
