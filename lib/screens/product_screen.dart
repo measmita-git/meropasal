@@ -1,3 +1,5 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mero_pasal/categories_widgets.dart';
 
@@ -89,6 +91,25 @@ class ProductScreen extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: CurvedNavigationBar(
+          backgroundColor: Color(0xFF4C53A5),
+          onTap: (index) {
+            Color(0xFF4C53A5);
+          },
+          items: [
+            Icon(
+              Icons.home,
+              color: Color(0xFF4C53A5),
+            ),
+            Icon(
+              CupertinoIcons.cart_fill,
+              color: Color(0xFF4C53A5),
+            ),
+            Icon(
+              Icons.home,
+              color: Color(0xFF4C53A5),
+            ),
+          ]),
     );
   }
 }
