@@ -106,7 +106,7 @@ class ProductScreen extends StatelessWidget {
               color: Color(0xFF4C53A5),
             ),
             Icon(
-              Icons.home,
+              Icons.list,
               color: Color(0xFF4C53A5),
             ),
           ]),

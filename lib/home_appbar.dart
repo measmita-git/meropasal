@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
-import 'package:mero_pasal/screens/cart_page.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({super.key});

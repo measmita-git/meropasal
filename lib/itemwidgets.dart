@@ -1,7 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class ItemWidgets extends StatelessWidget {
   const ItemWidgets({super.key});
@@ -44,7 +41,7 @@ class ItemWidgets extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    print('asmita');
+                    Navigator.pushNamed(context, '/ItemPage');
                   },
                   child: Image.asset(
                     'assets/$i.png',
