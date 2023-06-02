@@ -17,7 +17,7 @@ class CategoriesWidgtes extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 10),
               margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Color(0xFF939190),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Row(

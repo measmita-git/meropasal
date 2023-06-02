@@ -16,7 +16,7 @@ class ItemWidgets extends StatelessWidget {
             padding: EdgeInsets.all(6),
             margin: EdgeInsets.all(10),
             decoration: BoxDecoration(
-              color: Color.fromARGB(26, 194, 164, 164),
+              color: Color(0xFF939190),
             ),
             child: Column(
               children: [
